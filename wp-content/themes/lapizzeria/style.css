@@ -10,3 +10,159 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: restaurant, mobile first, responsive, pizza
 Text Domain: lapizzeria
 */
+html{
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+.contenedor{
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/**ENCABEZADO**/
+header.encabezado-sitio{
+    border-bottom: 1px solid #c1c1c1;
+}
+
+div.logo{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+img.logotipo{
+    width: 250px;
+}
+
+div.direccion p{
+    text-align: block;
+    clear: both;
+    padding-top: 10px;
+}
+
+div.direccion p{
+    margin:0;
+    font-size: 14px;
+    text-align: center;
+}
+
+@media only screen and (min-width:768px){
+    header.encabezado-sitio .contenedor{
+        position:relative;
+    }
+
+
+    div.logo{
+        text-align: left;
+    }
+
+    .informacion-encabezado{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    
+    div.direccion p{
+        text-align: right;
+    }
+}
+
+@media only screen and (min-width:992px){
+    div.logo{
+        text-align: center;
+    }
+}
+
+/** MENU REDES SOCIALES **/
+
+nav.sociales ul{
+    text-align: center;
+    list-style: none;
+    padding: 0;
+}
+
+@media only screen and (min-width: 768px){
+    nav.sociales ul{
+        float: right;
+    }
+}
+
+.sr-text{
+    display: none;
+}
+
+nav.sociales ul li{
+    position: relative;
+    display: inline-block;
+}
+
+nav.sociales ul li a:before{
+    font-family: 'FontAwesome';
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 5px;
+    content: '\f08e';
+    font-size: 30px;
+    color: #000000;
+
+}
+
+nav.sociales li a[href*="facebook.com"]::before {
+    content:'\f09a'
+}
+
+nav.sociales li a[href*="twitter.com"]::before {
+    content:'\f099'
+}
+
+nav.sociales li a[href*="pinterest.com"]::before {
+    content:'\f231'
+}
+
+nav.sociales li a[href*="youtube.com"]::before {
+    content:'\f16a'
+}
+
+nav.sociales li a[href*="instagram.com"]::before {
+    content:'\f16d'
+}
+
+/** NAVEGACION PRINCIPAL**/
+nav.menu-sitio ul{
+    list-style: none;
+    display: table;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+nav.menu-sitio ul li a{
+    text-align: center;
+    padding: 20px 0;
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+nav.menu-sitio ul li.current_page_item a{
+    border-bottom: 8px solid #a61206;
+}
+
+nav.menu-sitio ul li:hover{
+    background-color: #f19f30;
+}
+
+@media only screen and (min-width: 768px){
+    nav.menu-sitio ul li{
+        display: table-cell;
+        width: 1%;
+
+    }
+}
