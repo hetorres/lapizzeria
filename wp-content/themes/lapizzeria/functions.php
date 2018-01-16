@@ -10,6 +10,9 @@ function lapizzeria_styles() {
     wp_enqueue_style('fontawesome');
     wp_enqueue_style('style');
 
+    // REGISTRAR JS
+
+    wp_enqueue_script('scripts', get_template_directory_uri() . '/js/scripts.js', array(), '1.0.0', true );
 }
 
 add_action('wp_enqueue_scripts', 'lapizzeria_styles');

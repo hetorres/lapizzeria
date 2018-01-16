@@ -40,6 +40,13 @@
         </div><!--cierre contenedor-->
     </header>
 
+    <div class="menu-principal">
+        <div class="mobile-menu">
+            <a href="#" class="mobile"><i class="fa fa-bars" aria-hidden="true"></i> Menu </a>
+        </div>
+    
+    </div>
+
 
     <div class="contenedor navegacion">
         <?php
