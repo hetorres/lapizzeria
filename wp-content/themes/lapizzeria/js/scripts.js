@@ -1,10 +1,14 @@
 $ = jQuery.noConflict();
 
 $(document).ready(function(){
+
+    // Ocultar y mostrar menu
     $('.mobile-menu a').on('click', function(){
         $('nav.menu-sitio').toggle('slow');
     });
 
+
+    // Reaccionar a Rezise en la pantalla
     var breakpoint = 768;
 
     $(window).resize(function() {

@@ -1,4 +1,12 @@
 <?php
+
+function lapizzeria_setup(){
+    add_theme_support('post-thumbnails');
+
+}
+
+add_action('áfter_setup_theme', 'lapizzeria_setup');
+
 function lapizzeria_styles() {
     // REgistrar los estilos
     wp_register_style('normalize', get_template_directory_uri() . '/css/normalize.css', array(), '7.0.0' );
