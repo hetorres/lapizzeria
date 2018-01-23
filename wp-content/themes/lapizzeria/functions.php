@@ -1,11 +1,11 @@
 <?php
 
-function lapizzeria_setup(){
-    add_theme_support('post-thumbnails');
+function lapizzeria_setup() {
+    add_theme_support( 'post-thumbnails' );
+  }
+  add_action( 'after_setup_theme', 'lapizzeria_setup' );
 
-}
 
-add_action('áfter_setup_theme', 'lapizzeria_setup');
 
 function lapizzeria_styles() {
     // REgistrar los estilos
