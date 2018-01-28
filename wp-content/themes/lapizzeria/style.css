@@ -18,6 +18,10 @@ html{
     box-sizing: inherit;
 }
 
+.texto-centrado{
+    text-align: center;
+}
+
 .contenedor{
     max-width: 1100px;
     width: 100%;
@@ -202,3 +206,46 @@ nav.menu-sitio ul li:hover{
     }
 
 }
+
+/** Templates contenido **/
+div.hero{
+    background-color: rgb(230, 61, 61);
+    height: 450px;
+    text-align: center;
+    margin: 0 auto;
+    display: table;
+    position: relative;
+}
+
+div.hero .contenido-hero{
+    background-color: aqua;
+    vertical-align: middle;
+    color: white;
+    position: relative;
+    width: 100vw;
+}
+
+@media only screen and (min-width:768px){
+    div.texto-hero{
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+div.principal{
+    padding: 60px;
+    background-color: white;
+    position: relative;
+}
+
+@media only screen and (min-width:768px){
+    div.principal{
+        margin-top: -90px;
+    }
+}
+
+.contenido-paginas p{
+    font-size: 18px;
+    line-height: 50px;
+}
+
