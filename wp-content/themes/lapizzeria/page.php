@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-    <?php while( have_posts()): the_post(); ?>
+    <?php while(have_posts()): the_post(); ?>
 
         <div class="hero">
             <div class="contenido-hero">
@@ -10,12 +10,9 @@
             </div>
         </div>
 
-        
-
         <div class="principal contenedor">
-
             <main class="texto-centrado contenido-paginas">
-                <?php the_content(); ?>
+                <?php the_content( ); ?>
             </main>
         </div>
 <?php endwhile; ?>
