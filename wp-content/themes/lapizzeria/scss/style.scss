@@ -11,10 +11,6 @@ Tags: restaurant, mobile first, responsive, pizza
 Text Domain: lapizzeria
 */
 
-@import url(http://fonts.googleapis.com/css?family=Open%20Sans:400,300,300italic,400italic,700,700italic,900,900italic);
-@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700);
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
-@import url(http://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic);
 /* 
 verde-ppal: #8ec92f
 Verde#3: #528402
@@ -23,10 +19,10 @@ Amarillo:#F7FD86
 */
 
 /* Specify fonts
-font-family: 'Merriweather', serif;
-font-family: 'Roboto', sans-serif;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Merriweather', serif;
+    font-family: 'Roboto', sans-serif;
 */
 
 
@@ -260,8 +256,9 @@ div.hero .contenido-hero{
     color: #fff;
     position: relative;
     width: 100vw;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+    font-style: bold;
+    font-size: 1.3em;
     z-index: 2;
 }
 
