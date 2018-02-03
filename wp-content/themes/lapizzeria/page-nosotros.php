@@ -16,8 +16,20 @@
                 <?php the_content( ); ?>
             </main>
         </div>
+
+        <div class="informacion-cajas contenedor">
+            <div class="caja">
+                <?php
+                    $id_imagen = get_field('imagen_1');
+                    $imagen = wp_get_attachment_image_src( $id_imagen, 'nosotros' )
+                ?>
+                <img src="<?php echo $imagen[0] ?>" alt="imagen 1" class="imagen-caja" >
+
+                <div class="contenido-cajas">
+                    <?php the_field('descripcion_1'); ?>
+                </div>
+            </div>
+        </div>
 <?php endwhile; ?>
-
-
 
 <?php get_footer(  ); ?>
