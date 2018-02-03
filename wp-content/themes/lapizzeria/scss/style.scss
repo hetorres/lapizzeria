@@ -352,3 +352,19 @@ footer p{
 footer p.copyright{
     margin-top: 20px;
 }
+
+.informacion-cajas{
+    display: grid;
+}
+
+@media only screen and (min-width: 768px){
+    .informacion-cajas{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.informacion-cajas .caja{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+
+}
