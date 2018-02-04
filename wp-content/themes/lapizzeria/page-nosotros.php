@@ -21,33 +21,33 @@
             <div class="caja">
                 <?php
                     $id_imagen = get_field('imagen_1');
-                    $imagen = wp_get_attachment_image_src( $id_imagen, 'nosotros' )
+                    $imagen = wp_get_attachment_image_src($id_imagen, 'nosotros');
                 ?>
-                <img src="<?php echo $imagen[0] ?>" alt="imagen 1" class="imagen-caja" >
-
-                <div class="contenido-cajas">
+                <img src="<?php echo $imagen[0]; ?>">
+                <div class="contenido-caja">
                     <?php the_field('descripcion_1'); ?>
                 </div>
             </div>
+
             <div class="caja">
                 <?php
                     $id_imagen = get_field('imagen_2');
-                    $imagen = wp_get_attachment_image_src( $id_imagen, 'nosotros' )
+                    $imagen = wp_get_attachment_image_src($id_imagen, 'nosotros');
                 ?>
-                <img src="<?php echo $imagen[0] ?>" alt="imagen 1" class="imagen-caja" >
-
-                <div class="contenido-cajas">
+                <img src="<?php echo $imagen[0]; ?>">
+                <div class="contenido-caja">
                     <?php the_field('descripcion_2'); ?>
                 </div>
             </div>
+
             <div class="caja">
                 <?php
                     $id_imagen = get_field('imagen_3');
-                    $imagen = wp_get_attachment_image_src( $id_imagen, 'nosotros' )
+                    $imagen = wp_get_attachment_image_src($id_imagen, 'nosotros');
                 ?>
-                <img src="<?php echo $imagen[0] ?>" alt="imagen 1" class="imagen-caja" >
+                <img src="<?php echo $imagen[0]; ?>">
 
-                <div class="contenido-cajas">
+                <div class="contenido-caja">
                     <?php the_field('descripcion_3'); ?>
                 </div>
             </div>
