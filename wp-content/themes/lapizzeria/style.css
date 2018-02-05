@@ -398,3 +398,29 @@ div.texto-especialidad p {
     width: 33.3%; }
   .columnas2-3 {
     width: 66.6%; } }
+
+/** BLOG **/
+article.entrada-blog img {
+  margin-top: 30px; }
+
+header.informacion-entrada {
+  margin-top: 20px; }
+
+header.informacion-entrada div.fecha {
+  background-color: #f19f30;
+  float: left;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  padding-top: 5px;
+  margin-right: 20px; }
+
+header.informacion-entrada div.fecha time {
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700; }
+
+header.informacion-entrada div.fecha time span {
+  font-size: 16px;
+  display: block;
+  clear: both; }
