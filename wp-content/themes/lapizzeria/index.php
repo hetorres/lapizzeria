@@ -37,7 +37,8 @@
                                     <?php the_title('<h2>', '</h2>'); ?>
 
                                     <p class="autor">
-                                        <i class="fa fa-user" aria-hiden="true"> <?php the_author(); ?></i>
+                                        <i class="fa fa-user" aria-hiden="true"> </i>
+                                        <?php the_author(); ?>
                                     </p>
                                 </div>
 
@@ -49,6 +50,7 @@
                         </article>
                     <?php endwhile; ?>
                 </main>
+                <?php get_sidebar(); ?>
             </div><!-- .contenedor grid -->
         </div><!-- principal -->
 
