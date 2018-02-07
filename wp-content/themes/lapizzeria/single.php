@@ -21,7 +21,8 @@
         </div>
 
         <div class="contenedor">
-            <ol class="lista-comentarios">
+            <h3 class="texto-centrado">Comentarios</h3>
+            <ul class="lista-comentarios">
                 <?php 
                     $comentarios = get_comments(array(
                     'post_id'       =>  $post->ID,
@@ -31,7 +32,7 @@
                     'per_page'      =>  10,
                     'reverse_top_level' =>  false
                 ), $comentarios);  ?>
-            </ol> 
+            </ul> 
         </div>
 
 

@@ -19,4 +19,17 @@ $(document).ready(function(){
         }
     });
 
+    // AJUSTAR CAJAS SEGUN TAMAÑO DE LA IMAGEN
+
+    //ajustarCajas();
+
+    // Fluidbox
+    
+    jQuery('.gallery a').each(function() {
+        jQuery(this).attr({'data-fluidbox' : ''});
+      });
+      
+      if(jQuery('[data-fluidbox]').length > 0) {
+        jQuery('[data-fluidbox]').fluidbox();
+      }
 });
