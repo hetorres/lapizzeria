@@ -13,9 +13,8 @@
 
         <div class="principal contenedor contacto">
             <main class="texto-centrado contenido-paginas">
-                <h2>Realiza un Reservación</h2>
-
                 <form class="reserva-contacto" method="post" >
+                <h2>Realiza una Reservación</h2>
                     <div class="campo">
                         <input type="text" name="nombre" placeholder="Nombre" required>
                     </div>
@@ -34,10 +33,10 @@
                  
                     <div class="campo">
                         <textarea type="mensaje" name="mensaje" placeholder="Mensaje" required></textarea>
-                    </div>   
+                    </div>
+
+                    <input type="submit" value="Enviar" onClick="buttonClickFunction('Enviar', this)" class="button">   
                 </form>
-
-
             </main>
         </div>
 <?php endwhile; ?>
