@@ -858,5 +858,7 @@ form.reserva-contacto ::-ms-input-placeholder{
 }
 
 form.reserva-contacto input[type="submit"]{
-
+    border: none;
+    margin: 0 auto;
+    display: block;
 }
