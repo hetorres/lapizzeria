@@ -36,6 +36,7 @@
                     </div>
 
                     <input type="submit" value="Enviar" onClick="buttonClickFunction('Enviar', this)" class="button">   
+                    <input type="hidden" name="oculto" value="1">
                 </form>
             </main>
         </div>
