@@ -35,7 +35,7 @@
                         <textarea type="mensaje" name="mensaje" placeholder="Mensaje" required></textarea>
                     </div>
 
-                    <input type="submit" value="Enviar" onClick="buttonClickFunction('Enviar', this)" class="button">   
+                    <input type="submit" value="enviar" class="button">   
                     <input type="hidden" name="oculto" value="1">
                 </form>
             </main>
