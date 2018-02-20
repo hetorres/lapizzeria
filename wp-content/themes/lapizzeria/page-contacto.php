@@ -20,7 +20,11 @@
                     </div>
 
                     <div class="campo">
-                        <input type="datetime-local" name="fecha" placeholder="Fecha" required>
+                        <input type="date" name="fecha" required pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}">
+                    </div>
+
+                     <div class="campo">
+                        <input type="time" name="hora" required pattern="[0-9]{2}:[0-9]{2}">
                     </div>
 
                     <div class="campo">

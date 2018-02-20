@@ -16,7 +16,8 @@ function lapizzeria_database(){
     $sql = "CREATE TABLE $tabla (
             id mediumint(9) NOT NULL AUTO_INCREMENT,
             nombre varchar(50) NOT NULL,
-            fecha datetime NOT NULL,
+            fecha date NOT NULL,
+            hora time NOT NULL,
             correo varchar(50) DEFAULT '' NOT NULL,
             telefono varchar(10) NOT NULL,
             mensaje longtext NOT NULL,
@@ -42,7 +43,8 @@ function lapizzeria_database(){
         $sql = "CREATE TABLE $tabla (
                 id mediumint(9) NOT NULL AUTO_INCREMENT,
                 nombre varchar(50) NOT NULL,
-                fecha datetime NOT NULL,
+                fecha date NOT NULL,
+                hora time NOT NULL,
                 correo varchar(50) DEFAULT '' NOT NULL,
                 telefono varchar(10) NOT NULL,
                 mensaje longtext NOT NULL,
