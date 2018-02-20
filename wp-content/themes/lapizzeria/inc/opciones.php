@@ -13,5 +13,10 @@ function lapizzeria_opciones(){
 }
 
 function lapizzeria_reservaciones(){
-
+    ?>
+        <div class="wrap">
+            <h1>Reservaciones</h1>
+        
+        </div>
+    <?php
 }
