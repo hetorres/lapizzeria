@@ -7,7 +7,7 @@
     <title>Document</title>
     <?php wp_head(); ?>
 </head>
-<body>
+<body <?php body_class() ?>>
 
     <header class="encabezado-sitio">
         <div class="contenedor">
@@ -32,8 +32,8 @@
                     ?>
                 </div><!--cierre redes-sociales-->
                 <div class="direccion">
-                    <p>Paseo de la Rosaleda</p>
-                    <p>Penonome, Panamá</p>
+                    <p><?php echo esc_html(get_option('lapizzeria_direccion')) ?></p>
+                    <p><?php echo esc_html(get_option('lapizzeria_telefono')) ?></p>
                 </div>
             </div><!--cierre informacion-encabezadi-->
 
