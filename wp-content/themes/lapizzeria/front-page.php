@@ -31,7 +31,16 @@
                 ?>
 
                 <div class="especialidad columnas1-3">
-                    <?php the_title(); ?>
+                    <div class="contenido-especialidad">
+                        <?php the_post_thumbnail('especialidades_portrait'); ?>
+                        <div class="informacion-platillo">
+                            <h3><?php the_title(); ?></h3>
+                            <?php the_content(); ?>
+                            <p class="precio"><?php the_field('precio'); ?></p>
+                            <a href="<?php the_permalink(); ?>" class="button">Leer más</a>
+                        </div>
+
+                    </div>
 
                 </div>
 

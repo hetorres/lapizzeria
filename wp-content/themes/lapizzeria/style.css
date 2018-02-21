@@ -694,3 +694,47 @@ form.reserva-contacto input[type="submit"] {
 @media only screen and (min-width: 768px) {
   .home .texto-hero {
     max-width: 680px; } }
+div.contenido-especialidad {
+  position: relative;
+  overflow: hidden;
+  /*
+  **Problema con firefox**
+  display: table;*/ }
+
+div.informacion-platillo {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(241, 161, 48, 0.8);
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  color: #fff;
+  padding: 5px;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  opacity: 0; }
+
+div.informacion-platillo a:hover {
+  background-color: white;
+  color: #a61206; }
+
+@media only screen and (max-width: 767px) {
+  div.contenido-especialidad {
+    overflow: visible;
+    display: block;
+    margin-bottom: 30px; }
+
+  div.contenido-especialidad img {
+    width: 100%; }
+
+  div.informacion-platillo {
+    top: 0%;
+    position: relative;
+    opacity: 1;
+    background-color: #f19f30; } }
+div.contenido-especialidad:hover div.informacion-platillo {
+  top: 0;
+  opacity: 1; }
