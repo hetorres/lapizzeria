@@ -31,6 +31,8 @@ function lapizzeria_opciones(){
             <?php
                 if(isset($_GET['tab'])){
                     $active_tab = $_GET['tab'];
+                } else {
+                    $active_tab = 'tema';
                 }
             ?>
 
