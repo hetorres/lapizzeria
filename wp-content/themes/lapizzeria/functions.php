@@ -42,7 +42,8 @@ function lapizzeria_styles() {
     wp_enqueue_style('style');
 
 	// REGISTRAR JS
-	wp_register_script('maps', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDvYdQhQDFG2oaAQ0LmVGl3TJqZB2Yd09k&callback=initMap', array(), '', true);
+	$apikey = esc_html(get_option('lapizzeria_gmap_apikey'));
+	wp_register_script('maps', 'https://maps.googleapis.com/maps/api/js?key=' . $apikey . '&callback=initMap', array(), '', true);
 	wp_register_script('fluidbox', get_template_directory_uri() . '/js/jquery.fluidbox.min.js', array(), '1.0.0', true);
     wp_register_script('scripts', get_template_directory_uri() . '/js/scripts.js', array(), '1.0.0', true);
 	
@@ -51,6 +52,17 @@ function lapizzeria_styles() {
 	wp_enqueue_script('fluidbox');
     wp_enqueue_script('scripts');
 	
+
+	// Pasar variables de PHP a JavaScript.
+	wp_localize_script(
+		'scripts',
+		'opciones',
+		array(
+			'latitud' => get_option('lapizzeria_gmap_latitud'),
+			'longitud' => get_option('lapizzeria_gmap_longitud'),
+			'zoom' => get_option('lapizzeria_gmap_zoom'),
+		)
+	);
 
 }
 

@@ -1,8 +1,19 @@
-var ma;
+var map;
 function initMap(){
+
+    var latLng = {
+        lat: parseFloat(opciones.latitud),
+        lng: parseFloat(opciones.longitud)
+    };
     map = new google.maps.Map(document.getElementById('mapa'),{
-        center: {lat:8.515237, lng:-80.350401},
-        zoom: 16
+        center: latLng,
+        zoom: parseInt(opciones.zoom)
+    });
+
+    var marker = new google.maps.Marker({
+        position: latLng,
+        map: map,
+        title: 'La Pizzeria'
     });
 }
 
@@ -43,7 +54,7 @@ $(document).ready(function(){
         }
     }
 
-    $(windows).resize(function(){
+    $(window).resize(function(){
         if($(document).width() >= breakpoint){
             ajustarMapa(0);
         } else {
