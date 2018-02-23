@@ -114,6 +114,8 @@ function lapizzeria_reservaciones(){
                         <th class="manage-column">Correo</th>
                         <th class="manage-column">Teléfono</th>
                         <th class="manage-column">Mensaje</th>
+                        <th class="manage-column">Eliminar</th>
+
                     </tr>
                 </thead>
                 <body>
@@ -121,7 +123,7 @@ function lapizzeria_reservaciones(){
                         $reservaciones = $wpdb->prefix . 'reservaciones';
                         $registros = $wpdb->get_results("SELECT * FROM $reservaciones", ARRAY_A);
                         foreach($registros as $registro){ ?>
-                              <tr>
+                            <tr>
                                 <td><?php echo $registro['id']; ?> </td>
                                 <td><?php echo $registro['nombre']; ?> </td>
                                 <td><?php echo $registro['fecha']; ?> </td>
@@ -129,7 +131,10 @@ function lapizzeria_reservaciones(){
                                 <td><?php echo $registro['correo']; ?> </td>
                                 <td><?php echo $registro['telefono']; ?> </td>
                                 <td><?php echo $registro['mensaje']; ?> </td>
-                              </tr>
+                                <td>
+                                    <a class="borrar-registro" href="#" data-reservaciones="<?php echo $registro['id']; ?>">Eliminar</a>
+                                </td>
+                            </tr>
                         <?php }  ?>
                 </body>
             </table>

@@ -1,5 +1,12 @@
 <?php
 
+function lapizzeria_eliminar(){
+    echo "funciona!";
+
+    die();
+}
+add_action('wp_ajax_lapizzeria_eliminar', 'lapizzeria_eliminar');
+
 function lapizzeria_guardar() {
     global $wpdb;
     $tabla = $wpdb->prefix . "reservaciones";
